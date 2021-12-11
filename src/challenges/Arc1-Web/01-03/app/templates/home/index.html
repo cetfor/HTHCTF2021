@@ -1,0 +1,94 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} NDR {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+        <!-- Hero -->
+        <section class="section-header bg-secondary text-white">
+            <div class="container">
+               <div class="row justify-content-between align-items-center">
+                  <div class="col-12 col-md-7 col-lg-6 text-center text-md-left">
+                        <h1 class="display-2 mb-4">Full-Service <br class="d-none d-md-inline">Digital Records</h1>
+                        <p class="lead mb-4 text-muted">Nexxus Digital Records (NDR) is a full-service, 100% secure online database of public records. While the data we store is about the public, it is not accessible by the public. But don't worry, we promise to keep your data safe with 100% end-to-end encoding! Fully endorsed and approved by Missouri Governor Mike Parson!</p>
+                        <a href="./services.html" class="btn btn-tertiary mr-3 animate-up-2">What we do <span class="ml-2"><span class="fas fa-arrow-right"></span></span></a>
+                    </div>
+                  <div class="col-12 col-md-5 d-none d-md-block text-center"><img src="/static/assets/img/illustrations/about-illustration.svg" alt=""></div>
+               </div>
+            </div>
+            <div class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
+               <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+                  <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z"></path>
+               </svg>
+            </div>
+        </section>
+        <!-- End of Hero section -->
+
+        <!-- Section -->
+        <section class="section section-lg">
+            <div class="container">
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-md-6 col-xl-6 my-5 mt-sm-0 d-none d-sm-block">
+                        <img class="rounded img-fluid effect-img-1" src="/static/assets/img/sections/about-us-3.jpg" alt="Nexxus Office 1">
+                        <img class="rounded img-fluid effect-img-2" src="/static/assets/img/sections/about-us-2.jpg" alt="Nexxus Office 2">
+                    </div>
+                    <div class="col-md-6 col-xl-5 text-center text-md-left">
+                        <h2 class="h1 mb-5 font-weight-light">Big team, <br><span class="font-weight-bold">small hearts.</span></h2>
+                        <p class="lead">Here at Nexxus Data Records we understand it's hard being rich! That's why we cater to the ultra wealthy. Privacy is a priviledge, not a right -that's the motto we live by.  Just ask any of our 24/7 monitored employees struggling to pay rent and they will repeat our motto verbatim, like a robot, or we will elliminate them. We do it for you! &lt;3 </p>
+                        <p class="lead">With a culture of fear, a roster of over-worked talent, and several office guards with big guns, the NDR team is ready to serve Nexxus shareholders.</p>
+                        <img src="/static/assets/img/signature.svg" alt="signature" class="mt-4" width="150">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of section -->
+
+        <!-- Section -->
+        <section class="section section-lg pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 text-center">
+                        <!-- Visit Box -->
+                        <div class="icon-box mb-4">
+                            <div class="icon icon-primary mb-4">
+                                <span class="fas fa-user"></span>
+                            </div>
+                            <h3 class="h5 icon-box-title">Team Members</h3>
+                            <span class="counter display-3 text-gray d-block">1,298,000</span>
+                        </div>
+                        <!-- End of Visit Box -->
+                    </div>
+                    <div class="col-md-4 col-lg-4 text-center">
+                        <!-- Call Box -->
+                        <div class="icon-box mb-4">
+                            <div class="icon icon-primary mb-4">
+                                <span class="fas fa-money-check"></span>
+                            </div>
+                            <h3 class="h5 icon-box-title">Persons Tracked</h3>
+                            <span class="counter display-3 text-gray d-block">6.9 Billion</span>(+/- 1 Billion)
+                        </div>
+                        <!-- End of Call Box -->
+                    </div>
+                    <div class="col-md-4 col-lg-4 text-center">
+                        <!-- Email Box -->
+                        <div class="icon-box mb-4">
+                            <div class="icon icon-primary mb-4">
+                                <span class="fas fa-globe-europe"></span>
+                            </div>
+                            <h3 class="h5 icon-box-title">Countries</h3>
+                            <span class="counter display-3 text-gray d-block">195</span>
+                        </div>
+                        <!-- End of Email Box -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of section -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

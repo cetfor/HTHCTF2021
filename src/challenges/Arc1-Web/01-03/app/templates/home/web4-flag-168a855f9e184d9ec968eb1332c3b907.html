@@ -1,0 +1,32 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Congratulations! {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Section -->
+    <section class="min-vh-100 d-flex align-items-center bg-soft">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="signin-inner mt-3 mt-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                        <div class="text-center text-md-center mb-4 mt-md-0">
+                            <h1 class="mb-0 h3">HTH{web4_flag_update_me}</h1>
+                            (Web 4 flag: "Name here")
+                        </div>
+                        <form action="index.html" class="mt-4" method="get">
+                            <button type="submit" class="btn btn-block btn-primary">Visit NDR Home</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

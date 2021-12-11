@@ -1,0 +1,55 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Sign in! {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- Section -->
+    <section class="min-vh-100 d-flex align-items-center bg-soft">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="signin-inner mt-3 mt-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                        <div class="text-center text-md-center mb-4 mt-md-0">
+                            <h1 class="mb-0 h3">Welcome to NDR!<br />Please sign in.</h1>
+                        </div>
+                        <form action="login" class="mt-4" method="post">
+                            <!-- Form -->
+                            <div class="form-group">
+                                <label for="exampleInputIcon3">Username</label>
+                                <div class="input-group mb-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><span class="fas fa-user"></span></span>
+                                    </div>
+                                    <input class="form-control" id="exampleInputIcon3" placeholder="username" type="text" name="username" aria-label="username" required>
+                                </div>
+                            </div>
+                            <!-- End of Form -->
+                            <div class="form-group">
+                                <!-- Form -->
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><span class="fas fa-unlock-alt"></span></span>
+                                        </div>
+                                        <input class="form-control" id="password" placeholder="password" type="password" name="password" aria-label="Password" required>
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                            </div>
+                            <button type="submit" class="btn btn-block btn-primary">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

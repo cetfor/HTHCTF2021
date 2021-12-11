@@ -1,0 +1,127 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Records {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+        <!-- Section -->
+        <section class="section section-lg">
+            <div class="container">
+                <div class="row align-items-center justify-content-around">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Company Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        ACME Co.
+                                    </div>
+                                </td>
+                                <td>6725 S. Front Street</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="far fa-eye mr-3" data-toggle="tooltip" data-placement="top" title="Address visible"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        Briarthorne LLC.
+                                    </div>
+                                </td>
+                                <td>13 Noble Blvd.</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="far fa-eye mr-3" data-toggle="tooltip" data-placement="top" title="Address visible"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        Corbin Industries
+                                    </div>
+                                </td>
+                                <td>Hidden</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-form"><i class="far fa-eye mr-3"></i>View</button>
+                                    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body p-0">
+                                                    <div class="card bg-soft shadow-md border-0">
+                                                        <div class="card-header bg-white py-4">
+                                                            <div class="text-muted text-center">
+                                                                <h3>Protected Data!</h3>
+                                                                <span class="text-gray">Enter Access Code</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body bg-secondary text-white">
+                                                            <form action="check_access_code.html" class="mt-4" method="post">
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+                                                                        </div>
+                                                                        <input class="form-control" placeholder="code" type="text" name="accesscode" required>
+                                                                        <div class="input-group-append">
+                                                                            <span class="input-group-text">
+                                                                                <i class="far fa-eye"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-3">
+                                                                    <button type="submit" class="btn btn-block btn-white">Check Access Code</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <th scope="row">?</th>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        Error: contact webmaster!
+                                    </div>
+                                </td>
+                                <td>Invalid</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="far fa-eye-slash mr-3" data-toggle="tooltip" data-placement="top" title="Error rendering addresses!"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- End of section -->
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
