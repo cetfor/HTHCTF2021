@@ -19,4 +19,4 @@ sudo su - re5 -c "nohup socat TCP4-LISTEN:7815,tcpwrap=script,reuseaddr,fork EXE
 # Pwnable challenges
 sudo su - pwn1 -c "nohup socat TCP4-LISTEN:7821,tcpwrap=script,reuseaddr,fork EXEC:'/home/pwn1/pwn1',pty,ctty </dev/null >/dev/null 2>&1 &"
 sudo su - pwn2 -c "nohup socat TCP4-LISTEN:7822,tcpwrap=script,reuseaddr,fork EXEC:'/home/pwn2/pwn2',pty,ctty </dev/null >/dev/null 2>&1 &"
-sudo su - pwn3 -c "nohup socat TCP4-LISTEN:7823,tcpwrap=script,reuseaddr,fork EXEC:'/home/pwn3/pwn3',pty,ctty </dev/null >/dev/null 2>&1 &"
+sudo su - pwn3 -c "nohup socat TCP4-LISTEN:7823,tcpwrap=script,reuseaddr,fork EXEC:'/home/pwn3/pwn3' </dev/null >/dev/null 2>&1 &"
